@@ -4,7 +4,7 @@ import { ChannelList, useChatContext } from 'stream-chat-react';
 import { ChannelSearch, TeamChanneList, TeamChannelPreview } from './';
 import HospitalIcon from '../assets/assets/hospital.png'
 import LogoutIcon from '../assets/assets/logout.png'
-const SideBar = () => {
+const SideBar = () => (
     <div className='channel-list__sidebar'>
         <div className='channel-list__sidebar__icon1'>
             <div className='icon1__inner'>
@@ -17,14 +17,23 @@ const SideBar = () => {
             </div>
         </div>
     </div>
-}
+);
+
+const CompanyHeader = () => (
+    <div className='channel-list__header'>
+        <p className='channel-list__header__text'>Stop n Chatt</p>
+    </div>
+)
 
 
 const ChannelListContainer = () => {
     return (
-        <div>
-            Channel List Container
-        </div>
+        <>
+            <SideBar />
+            <div className='channel-list__list__wrapper'>
+                <CompanyHeader />
+            </div>
+        </>
     )
 }
 
