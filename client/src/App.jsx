@@ -5,6 +5,8 @@ import Cookies from 'universal-cookie';
 
 
 import { ChannelContainer, ChannelListContainer } from './components';
+import './App.css';
+//api key
 const apiKey = 'fyf6zkcvpeez';
 
 const client = StreamChat.getInstance(apiKey);
