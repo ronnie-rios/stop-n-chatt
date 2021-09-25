@@ -46,7 +46,7 @@ const Auth = () => {
             cookies.set('hashedPassword', hashedPassword);
         }
 
-        window.location.reoload();
+        window.location.reload();
     }
 
     const switchMode =()=> {
